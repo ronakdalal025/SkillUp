@@ -1,16 +1,86 @@
-# React + Vite
+# ScoreUp IELTS – Homepage Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive homepage built with **React JS** for a fictional IELTS coaching institute. The design emphasizes clarity, professional aesthetics, and responsiveness for both desktop and mobile users.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Setup Instructions
 
-## React Compiler
+1. Clone the repository:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   ```bash
+   git clone https://github.com/ronakdalal025/SkillUp.git
+   ```
 
-## Expanding the ESLint configuration
+2. Navigate to the project folder:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   cd IELTS-ASSIGNMENT
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the app in your browser (usually at `http://localhost:5173/`).
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx              # Navigation menu, logo, and mobile toggle logic
+│   ├── Footer.jsx              # Basic links, contact info, and copyright
+│   └── StarRating.jsx          # Reusable utility component for testimonial ratings
+│
+├── sections/
+│   ├── HeroSection.jsx         # Hero section with main headline and call-to-action
+│   ├── FeaturesSection.jsx     # Section displaying 4 feature cards
+│   └── TestimonialsSection.jsx # Section with 3 student review cards
+│
+├── data/
+│   └── content.js              # Exports featuresData and testimonialsData arrays
+│
+├── assets/
+│   └── HeroVisual.jsx          # Inline SVG graphic used in Hero section
+│
+└── App.jsx                     # Main entry point assembling all sections
+```
+
+---
+
+## 🎨 Design Choices
+
+* **Modern & Professional Layout**
+  Chose a clean layout with a consistent color palette (blue/purple shades) and modern typography to reflect trust and credibility for an educational institute.
+
+* **Responsive Design**
+  Implemented responsiveness so the page adapts smoothly to mobile, tablet, and desktop screens.
+
+* **Component-Based Approach**
+  Each section (Navbar, Hero, Features, Testimonials, Footer) is modular and reusable, making the codebase clean and maintainable.
+
+* **Feature Highlights**
+
+  * *Speaking Practice* (personalized coaching sessions)
+  * *Mock Tests* (full-length practice exams)
+  * *AI Band Score Predictor* (tech-driven feedback)
+  * *Premium Study Materials* (updated resources for preparation)
+
+* **Student Testimonials**
+  Included real-style feedback cards with star ratings to build authenticity and trust.
+
+* **Footer Simplicity**
+  Contact info, quick links, and resource links are placed neatly in the footer for easy access.
+
+---
